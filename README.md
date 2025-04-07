@@ -31,6 +31,7 @@ Or if you want to run tests in docker container you may:
 To start locally:
 - you need to create venv first, for example ```python3 -m venv venv```
 - activate venv ```. ./venv/bin/activate```
+- run ```pip install -r requirements.txt``` to install dependencies
 - ```python manage.py makemigrations```
 - ```python manage.py migrate```
 - ```python manage.py runserver```
