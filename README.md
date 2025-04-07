@@ -12,11 +12,12 @@ A Django REST framework API for managing events and user registrations, with Doc
 
 ## Project Structure
 
-Project is divided on 2 apps:
+Project main logic is contained in 4 directories:
 
-- Users - containing auth logic for users
-- Events - containing event crud, and event registration
-- Deploy - directory containing Docker related files
+- users/ - containing auth logic for users
+- events/ - containing event crud, and event registration
+- deploy/ - directory containing Docker related files
+- events_project/ - django project settings
 
 ## Getting Started
 
