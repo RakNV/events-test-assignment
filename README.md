@@ -23,11 +23,11 @@ Project main logic is contained in 4 directories:
 
 To start project via docker:
 - ```cd deploy/```
-- ```docker-compose up --build --force-recreate --remove-oprphans api```
+- ```docker-compose up --build --force-recreate --remove-orphans api```
   
 Or if you want to run tests in docker container you may:
 - ```cd deploy/```
-- ```docker-compose up --build --force-recreate --remove-oprphans tests```
+- ```docker-compose up --build --force-recreate --remove-orphans tests```
   
 To start locally:
 - you need to create venv first, for example ```python3 -m venv venv```
@@ -37,7 +37,20 @@ To start locally:
 - ```python manage.py migrate```
 - ```python manage.py runserver```
 
-For easier api testing experience i recommend accessing api via /swagger endpoint
+For easier api testing experience I recommend accessing api via ```/swagger``` endpoint
+
+## Endpoints
+
+- ```GET    /events```
+- ```POST   /events/create```
+- ```GET    /events/{event_id}```
+- ```DELETE /events/{event_id}/delete```
+- ```PUT    /events/{event_id}/update```
+- ```POST   /events/{event_id}/register```
+- ```GET    /events/registrations/my-events```
+- ```POST   /users/login```
+- ```POST   /users/signup```
+- ```GET    /swagger```
 
 ### Prerequisites
 
