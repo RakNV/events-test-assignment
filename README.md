@@ -29,7 +29,8 @@ Or if you want to run tests in docker container you may:
 - ```docker-compose up --build --force-recreate --remove-oprphans tests```
   
 To start locally:
-- you need to create venv first
+- you need to create venv first, for example ```python3 -m venv venv```
+- activate venv ```. ./venv/bin/activate```
 - ```python manage.py makemigrations```
 - ```python manage.py migrate```
 - ```python manage.py runserver```
