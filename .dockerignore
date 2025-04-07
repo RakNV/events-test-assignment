@@ -1,0 +1,39 @@
+# Development environment
+venv/
+.env
+.env.local
+.secrets
+
+# Version control
+.git/
+.gitignore
+.gitmodules
+
+# Docker files
+docker-compose.override.yml
+
+# Database files
+*.sqlite3
+*.db
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Local development
+db.sqlite3
+tmp/
+temp/

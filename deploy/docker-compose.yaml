@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/api/Dockerfile
+    volumes:
+      - ../:/app
+      - ../db.sqlite3:/app/db.sqlite3
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - ALLOWED_HOSTS=localhost,127.0.0.1
+
+  tests:
+    build:
+      context: ..
+      dockerfile: deploy/tests/Dockerfile
+    environment:
+      - CI=true
