@@ -52,7 +52,7 @@ For easier api testing experience I recommend accessing api via ```/swagger``` e
 - ```POST   /users/signup```
 - ```GET    /swagger```
 
-### Prerequisites
+## Prerequisites
 
 - Docker 
 - Docker Compose 
